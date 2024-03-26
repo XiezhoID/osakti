@@ -1,0 +1,27 @@
+.jadwal {
+  display: flex;
+  .jadwal-wrapper {
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    overflow-x: auto;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      td,
+      th {
+        text-align: center;
+        padding: 8px 2rem;
+      }
+      .dark-col:nth-child(even) {
+        background-color: $dark-semi;
+      }
+      .light-col:nth-child(even) {
+        background-color: $light-semi;
+      }
+      tr.now {
+        background-color: rgb(187, 131, 0);
+      }
+    }
+  }
+}

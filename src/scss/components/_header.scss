@@ -1,0 +1,60 @@
+@import "../variables";
+
+.header {
+  padding: 0.5rem 0;
+  text-align: center;
+  h1 {
+    padding: 0.5rem;
+  }
+  p {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.header-quran {
+  width: 50%;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  select {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  a {
+    flex: 1;
+    padding: 0.5rem 2rem;
+    border-radius: 100px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      outline: 2px solid $primary;
+    }
+  }
+}
+
+@media (max-width: 848px) {
+  .header-quran {
+    width: 100%;
+  }
+}
+
+@media (max-width: 578px) {
+  .header-quran {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../variables";
+
+#navbar {
+  width: 80px;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  nav {
+    height: 100vh;
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      li {
+        &:hover svg {
+          border-radius: 5px;
+          box-shadow: 0 0 20px 0 $primary;
+        }
+        a {
+          font-size: 0.8rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span,
+          svg {
+            transition: 0.2s;
+            text-align: center;
+            padding: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    nav {
+      height: 70px;
+      ul {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      a {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
